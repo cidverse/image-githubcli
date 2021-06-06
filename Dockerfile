@@ -13,7 +13,7 @@ RUN apk add --no-cache curl &&\
 FROM alpine:latest
 
 # Update Deps
-RUN apk --no-cache update
+RUN apk add --no-cache git
 
 # Installation
 COPY --from=0 /usr/local/bin/gh /usr/local/bin/gh
